@@ -23,7 +23,8 @@ Os testes de desempenho foram realizados em um computador com as seguintes espec
 LTS, 16GB de memória RAM DDR4 e placa de vídeo Intel Iris Xe. As comparações entre
 os algoritmos são feitas com base no tempo de execução e no uso de recursos computaci-
 onais. A tabela a seguir mostra os tempos de execução para diferentes tamanhos de vetor para cada algoritmo
-
+<br/>
+<br/>
 <table border="1">
   <thead>
     <tr>
@@ -121,3 +122,15 @@ onais. A tabela a seguir mostra os tempos de execução para diferentes tamanhos
     </tr>
   </tbody>
 </table>
+<br/>
+ O desempenho das variações do MergeSort demonstra carac-
+terísticas distintas com base em seu funcionamento. O MergeSort Recursivo apresenta o
+maior tempo médio em vetores grandes devido à sobrecarga de chamadas recursivas. Já
+o MergeSort Inserção(10) é mais eficiente em vetores pequenos, pois utiliza o algoritmo
+de inserção para ordenar subvetores de 10 elementos antes da mesclagem. O MergeSort
+Inserção(100), apesar de seguir o mesmo princípio apresenta desempenho inferior ao In-
+serção(10), A variação Interativa se destaca em vetores pequenos, por ter a ausência de
+de chamadas recursivas, mas perde eficiência conforme o tamanho do vetor cresce. Por
+fim, os métodos Multiway, embora mais lentos para vetores pequenos, mostram melhorias
+significativas para vetores grandes, como o Multiway(5) apresentando uma leve vantagem
+sobre o Multiway(10).
